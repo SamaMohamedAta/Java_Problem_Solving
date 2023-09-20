@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package CH02;
 
-/**
- *
- * @author Sama
- */
+import java.util.Scanner;
+
 public class EX02_02 {
-    
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the radius and length of a cylinder: ");
+        double radius = input.nextDouble();
+        double length = input.nextDouble();
+
+        double area = radius * radius * Math.PI;
+        double volume = area * length;
+        System.out.println("the area is " + area);
+        System.out.println("the volume is " + volume);
+    }
 }
